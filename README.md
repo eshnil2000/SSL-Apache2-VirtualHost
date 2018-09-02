@@ -1,7 +1,9 @@
 # SSL-Apache2-VirtualHost-NodeApp
 ## Any Node app on any port converted to SSL
 #### https://mydomain.com/api-design will get the node app on http://mydomain.com:8082/
-#### http://mydomain.com/ will get the app on http://mydomain.com:3001/
+#### https://mydomain.com/ will get the app on http://mydomain.com:3001/
+
+#### Contents of /etc/apache2/sites-available/000-default-le-ssl.conf
 
 ```
 <IfModule mod_ssl.c>
@@ -35,8 +37,9 @@ Include /etc/letsencrypt/options-ssl-apache.conf
 </VirtualHost>
 </IfModule>
 ```
-#### Pre-requisites
-Turn on all the modules
+## Pre-requisites
+
+#### Turn on all the modules
 ```
 sudo a2enmod ssl
 
@@ -45,3 +48,11 @@ sudo a2enmod proxy_html
 sudo a2enmod proxy_http
 sudo a2enmod rewrite
 ```
+
+#### All required ports open on server
+
+#### Apache2 server running
+
+#### Let's Encrypt SSL certificate installed
+
+
