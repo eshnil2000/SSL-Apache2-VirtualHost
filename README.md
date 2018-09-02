@@ -60,13 +60,13 @@ Some resources (css, js, etc files may not load if referenced relative to folder
 For example, a file that was at dist/template.css will not load, because the relative path would be:
 https://mydomain.com/dist which does not exist! 
 
-#### Example: this will not work
+#### Example: this will not work over SSL
 ```
 <link href="./dist/swagger-editor.css" rel="stylesheet">
 ```
 
 TO fix this, change the path to:
-#### Example: this will not work
+#### Example: this will work OK over SSL
 ```
 <link href="//mydomain.com/api-design/dist/swagger-editor.css" rel="stylesheet">
 ```
