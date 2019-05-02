@@ -31,7 +31,7 @@
 
 
 ServerName mydomain.com
-SSLCertificateFile /etc/letsencrypt/live/mydomain.com/fullchain.pem
+SSLCertificateFile /etc/letsencrypt/live/mydomain.com/cert.pem
 SSLCertificateKeyFile /etc/letsencrypt/live/mydomain.com/privkey.pem
 Include /etc/letsencrypt/options-ssl-apache.conf
 </VirtualHost>
